@@ -1,0 +1,155 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #e8e4d9;
+}
+
+/* header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+} */
+header {
+    background-image: url('https://scontent.fdvo5-1.fna.fbcdn.net/v/t39.30808-6/362258285_667826598716418_1502319167794415229_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHuAoTwROtfh79bQYdM76WUlSG-7UgR8EyVIb7tSBHwTF3qa9rVVSRG7fKUdSj9Wmb-n-GtveaFgmRVQ0USx70b&_nc_ohc=GfiYOmb0a9kQ7kNvgE6Nxxf&_nc_zt=23&_nc_ht=scontent.fdvo5-1.fna&_nc_gid=AIoC9XUlzATze6Ydu1rD3G5&oh=00_AYCA255G-cT23JjdC1Nn-R_dMF_96UAqsQfre0rGZML90Q&oe=674A6727');
+    background-size: 100% 350px;
+    /* Ensures the image covers the header */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    color: white;
+    /* Makes the text readable */
+    text-align: center;
+    /* Centers text horizontally */
+    padding: 20px;
+    /* Adds spacing around the text */
+    height: 250px;
+    /* Sets the exact height of the header */
+    display: flex;
+    /* Enables flexbox layout */
+    flex-direction: column;
+    /* Stacks content vertically */
+    justify-content: center;
+    /* Centers content vertically */
+    align-items: center;
+    /* Centers content horizontally */
+}
+
+
+
+header h1 {
+    color: #530505;
+    margin: 0;
+    font-size: 3.0em;
+    font-weight: 700;
+    -webkit-text-stroke: 1px white;
+}
+
+header p {
+    margin: 5px 0 20px;
+    font-size: 0.9em;
+    color: #555;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 2;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #4a0b5a;
+}
+
+.left h2 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.no-data {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.no-data img {
+    width: 200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #530505;
+    ;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+#google-btn {
+    margin: 20px;
+    border: gainsboro solid 2px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4a0b5a;
+    border-radius: 5px;
+    font-size: 0.9em;
+
+
+
+}
+
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+.right .u-logo {
+    width: 150px;
+}
+
+.right .jp-logo {
+    margin-top: 10px;
+}
+
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #157F3B;
+    text-decoration: none;
+
+}
