@@ -1,0 +1,44 @@
+  <!-- <div>
+    <h1 class="text-center">
+      What is Magna Carta of Women (Republic Act No. 9710)?
+    </h1>
+    <p class="text-justify">
+      The Magna Carta of Women (MCW) is a comprehensive women’s human rights law
+      that seeks to eliminate discrimination through the recognition,
+      protection, fulfillment, and promotion of the rights of Filipino women,
+      especially those belonging to the marginalized sectors of society.
+    </p>
+    <p>
+      It is the local translation of the provisions of the Convention on the
+      Elimination of All Forms of Discrimination against Women’s (CEDAW),
+      particularly in defining gender discrimination, state obligations,
+      substantive equality, and temporary special measures. It also recognizes
+      human rights guaranteed by the International Covenant on Economic, Social,
+      and Cultural Rights (ICESCR).
+      <br />
+      <em class="mt-5" style="font-size: inherit">Source: Philippine Commision on Women</em>
+    </p>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-8">
+      <p>
+        1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+        aspernatur, aliquid ducimus accusantium voluptatum maxime reprehenderit
+        necessitatibus eius sed molestias, optio perspiciatis eaque praesentium
+        dolor maiores laboriosam ad! Facere, beatae.
+      </p>
+    </div>
+ 
+    <div class="col-md-8">
+      <p>
+        2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+        itaque nam natus accusamus inventore veritatis, aut, quas aperiam illo
+        voluptatum deserunt doloremque, quibusdam eum minima maxime! Ipsa
+        molestiae eaque laborum.
+      </p>
+    </div>
+    Third Column
+    <div class="col-md-4 ">
+      <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officia at aliquam necessitatibus laboriosam fuga eos architecto maxime, ipsam enim aspernatur laborum possimus rerum. Minus omnis ab nobis quod ullam.</p>
+    </div>
+  </div> -->

@@ -1,0 +1,77 @@
+<app-header></app-header>
+
+<div class="content">
+ 
+  <h3 class="mt-5">See Upcoming Event</h3>
+  <p class="text-muted">Stay updated with the latest events and activities happening soon. Don’t miss out!</p>
+  
+
+  <!-- Carousel Section -->
+  <div id="bannerCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="banner" style="background-image: url('assets/img/Banner/Pic0.jpg');"></div>
+      </div>
+      <div class="carousel-item" *ngFor="let img of [1,2,3,4,5]">
+        <div class="banner" [style.backgroundImage]="'url(assets/img/Banner/Pic' + img + '.jpg)'"></div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev" aria-label="Previous Slide">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next" aria-label="Next Slide">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <!-- Main Content Section -->
+
+  <div class="content container mt-4">
+    <div class="row">
+      <!-- Main Content Section -->
+      <div class="col-md-4 ">
+        <!-- Search Widget -->
+        <!-- <div class="widget card p-3 mb-3">
+          <h5>Search</h5>
+          <input type="text" [(ngModel)]="searchTerm" class="form-control mb-2" placeholder="Search">
+          <button (click)="searchEvents()" class="btn btn-purple w-100">Search</button>
+        </div> -->
+        <div class="widget card p-3 mb-3">
+          <h5>Search</h5>
+                <input type="text" [(ngModel)]="searchTerm" (input)="searchEvents()" placeholder="Search events..." class="form-control mb-3" />
+
+        </div>
+  
+        <!-- Recent Posts Widget -->
+        <div class="widget card p-3 ">
+          <h5>Upcoming Events</h5>
+          <ul class="list-unstyled">
+            <li *ngFor="let recent of EventsList | slice:0:5">
+              <a href="#" class="recent-post-link">{{ recent.EventName }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8">
+          <!-- <input type="text" [(ngModel)]="searchTerm" (input)="searchEvents()" placeholder="Search events..." class="form-control mb-3" /> -->
+       
+        <div class="post card p-3 mb-3" *ngFor="let dataItem of EventsList">
+          <h4 class="post-title">{{ dataItem.EventName }}</h4>
+          <div class="meta text-muted mb-2">
+            <span>📅 {{ dataItem.EventDate | date: 'MMM d, y' }}</span> |
+            <span>👤 GAD</span> |
+            <span>⏰ {{ dataItem.EventTime }}</span>
+          </div>
+          <p>{{ dataItem.EventDescription }}</p>
+        </div>
+      </div>
+      
+      <!-- Sidebar Section -->
+
+    </div>
+  </div>
+  
+  <!-- Back to Top Button -->
+  <button id="myBtn" title="Go to top" (click)="topFunction()" class="btn btn-purple back-to-top">Top</button>
+  

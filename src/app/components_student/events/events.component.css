@@ -1,0 +1,161 @@
+
+
+.carousel-item .banner {
+  background-size: 100% 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Apply margin to the .content */
+.content {
+margin: 10px;
+padding: 10px; /* Optional: Add padding for extra spacing inside the container */
+box-sizing: border-box; /* Ensures padding is included within the content area */
+}
+.container .row{
+  align-content: center;
+}
+
+/* Optional: Style the banner */
+.banner {
+margin: 10px auto; /* Center the banner horizontally with margin */
+padding: 10px; /* Add spacing inside the banner */
+background-color: #f0f0f0; /* Example background color */
+border: 1px solid #ccc; /* Example border */
+}
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
+color: #333;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+margin: 20px;
+
+}
+
+.main-content {
+flex: auto;
+margin-right: 20px;
+}
+
+.sidebar {
+flex: auto;
+
+
+}
+
+.post {
+background: #fff;
+border: 1px solid #dddddd;
+border-radius: 5px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.post h1 {
+font-size: 24px;
+color: #333;
+}
+
+.post .meta {
+font-size: 14px;
+color: #777;
+margin-bottom: 15px;
+}
+
+.widget {
+background: #fff;
+border: 1px solid #ddd;
+border-bottom: 4px solid rgb(95, 1, 99);;
+border-radius: 5px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widget h2 {
+font-size: 18px;
+margin-bottom: 15px;
+color: #333;
+}
+
+.widget input[type="text"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.widget button {
+padding: 10px 20px;
+background-color: rgb(95, 1, 99);
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.widget button:hover {
+background-color: rgb(95, 1, 99);
+}
+
+.widget ul {
+list-style: none;
+padding: 0;
+}
+
+.widget ul li {
+margin-bottom: 10px;
+}
+
+.widget ul li a {
+text-decoration: none;
+color: rgb(95, 1, 99);;
+}
+
+.widget ul li a:hover {
+text-decoration: underline;
+}
+/* Style for the "Top" button */
+#myBtn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1000;
+background-color: rgb(95, 1, 99);
+color: white;
+border: none;
+border-radius: 4px;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+#myBtn:hover {
+background-color: rgb(95, 1, 99);
+
+}
+.word-wrap {
+word-wrap: break-word; 
+max-width: 500px; 
+white-space: normal;
+text-align: justify;
+}

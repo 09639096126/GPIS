@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<div class="content">
+ 
+
+  <h3 class="mt-5 text-center">GAD Freedom Wall</h3>
+  <p class="text-muted text-center">Share your thoughts, connect with others, and stay updated with the latest GAD activities.</p>
+  
+
+  <!-- Carousel Section -->
+  <div id="bannerCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="banner" style="background-image: url('assets/img/Banner/Pic0.jpg');"></div>
+      </div>
+      <div class="carousel-item" *ngFor="let img of [1,2,3,4,5]">
+        <div class="banner" [style.backgroundImage]="'url(assets/img/Banner/Pic' + img + '.jpg)'"></div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev" aria-label="Previous Slide">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next" aria-label="Next Slide">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+ 
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card p-3 shadow-sm" style="max-width: 500px; width: 100%;">
+        <h5 class="text-center">Share Your Thoughts</h5>
+        <textarea [(ngModel)]="newPost" class="form-control mb-2" placeholder="What's on your mind?"></textarea>
+        <button (click)="addPost()" class="btn btn-purple w-100">Post</button>
+      </div>
+    </div>
+  
+    <!-- User Posts Section -->
+  
+  <div class="col-md-8">
+    <div *ngFor="let post of userPosts" class="card mt-3 p-3 shadow-sm" style="max-width: 500px; width: 100%;">
+      <h6 class="fw-bold">Anonymous</h6>
+      <p>{{ post }}</p>
+      <div class="text-muted small">🕒 {{ currentDate | date: 'short' }}</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+ 
+
+  
+  <!-- Back to Top Button -->
+  <button id="myBtn" title="Go to top" (click)="topFunction()" class="btn btn-purple back-to-top">Top</button>
+  

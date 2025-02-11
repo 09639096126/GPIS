@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+/* Force modal to appear on top of sidenav */
+.modal-backdrop {
+    z-index: 2000 !important;
+  }
+  
+  .modal {
+    z-index: 2100 !important;  /* Ensure modal is above the backdrop */
+  }
+  
+  .modal-dialog {
+    position: relative;
+    z-index: 2200 !important;  /* Modal content has the highest z-index */
+  }
